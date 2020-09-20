@@ -1,0 +1,33 @@
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 200ms;
+
+    &--primary {
+        color: $c-text-primary
+    }
+
+    &:hover {
+        background-color: #ebeff7;
+    }
+
+    &--actionable {
+        width: 32px;
+        height: 32px;
+
+    }
+}
+
+svg {
+    color: #6a737d;
+    width: 17px;
+    height: 17px;
+    path:nth-child(2) {
+        fill: currentColor;
+    }
+
+
+}

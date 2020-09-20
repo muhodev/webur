@@ -1,0 +1,12 @@
+.layout {
+    &__container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: $spacer-3 $spacer-4;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: .75fr 3fr 2fr;
+        grid-gap: $spacer-4;
+    }
+}

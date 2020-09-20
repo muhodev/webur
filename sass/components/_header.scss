@@ -1,0 +1,42 @@
+.header {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-color-white;
+    border-bottom: $border;
+    // position: sticky;
+    // top: 0;
+    // left: 0;
+    // z-index: 999;
+
+    &__container {
+        max-width: 1200px;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: $spacer-4;
+    }
+
+}
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 3px;
+    svg {
+        height: auto;
+        width: 100px;
+        color:#2f363d;
+    }
+}

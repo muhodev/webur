@@ -1,0 +1,21 @@
+.select {
+    width: 100%;
+    .option {
+        &--selected {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: $border;
+            border-radius: $radius;
+            padding: 6px 10px;
+        }
+        
+    }
+
+    .options {
+        position: absolute;
+        top: 0;
+
+    }
+}

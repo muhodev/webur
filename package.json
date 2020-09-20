@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "weburus",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate:icon": "svgr icons -d components/Icons --icon"
+  },
+  "dependencies": {
+    "next": "^9.5.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.4.0"
+  }
+}
