@@ -36,12 +36,22 @@
     }
 
     &__header {
-        margin-bottom: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    
+
+    &__title {
+        font-weight: $f-weight-medium;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+
+    &__footer {
+        margin-top: 14px;
+        margin-bottom: 8px;
+    }
+
     &__tags {
         display: flex;
         align-items: center;
@@ -64,12 +74,6 @@
         margin-top: $spacer-2;
     }
 
-    &__text {
-        color: $c-text-gray-light;
-        font-size: 14px;
-        margin-top: 6px;
-    }
-
     &__cover {
         width: 100%;
         height: 285px;
@@ -89,7 +93,7 @@
         grid-template-columns: repeat(4, 1fr);
         margin-top: $spacer-3;
     }
-    
+
     &__action {
         border: none;
         background-color: transparent;
@@ -108,7 +112,7 @@
                 background-color: #dbedff;
             }
         }
-        
+
         &:focus {
             border: 0;
             outline: 0;
@@ -125,18 +129,13 @@
         grid-template-columns: auto 1fr auto;
         align-items: center;
         grid-gap: $spacer-4;
-        
 
         &--title {
             font-weight: $f-weight-medium;
             font-size: 17px;
         }
 
-
-        .author{
-            &__name {
-                margin-left: $spacer-2;
-            }
+        .author {
             &__username {
                 font-size: 14px;
             }
@@ -161,7 +160,6 @@
     }
 }
 
-
 .author {
     display: flex;
     align-items: center;
@@ -172,8 +170,6 @@
 
     &__username {
         color: $c-text-gray-light;
-        margin-left: $spacer-1;
-        font-size: 14px;
     }
 }
 
