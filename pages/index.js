@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, PostWidget, PostTopWidget, CommunityAboutWidget, NewPostWidget, Avatar } from '../components'
+import { Layout, PostWidget, PostTopWidget, CommunityAboutWidget, NewPostWidget, Avatar, Box } from '../components'
 import { posts } from "../api/"
 
 

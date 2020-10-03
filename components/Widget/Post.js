@@ -1,39 +1,39 @@
 import React from 'react'
-import { Avatar } from '..'
+import { Avatar, Box } from '..'
 import { Comment, Favorite, Bookmark, Share, More, Article, Question, Group, BaseIcon } from '../Icons'
 
 function PostWidget({ data }) {
     return (
         <article className="widget">
             <div className="widget__container">
-                <div className="d-flex align-start">
+                <Box flex alignStart>
                     <div className="widget__avatar">
                         <Avatar size="md" img={data.author.avatar} />
                     </div>
                     <div className="widget__content">
 
                         <div className="widget__body">
-                            <div className="widget__header d-flex align-center space-between">
-                                <div className="d-flex align-center">
-                                    <div className="mr-1 d-flex align-center icon--default">
+                            <Box alignCenter spaceBetween flex>
+                                <Box flex alignCenter>
+                                    <BaseIcon>
                                         {
                                             data.type === "article" ? <Article /> :
-                                                data.type === "group" ? <Group /> : <Question />
+                                                data.type === "group" ? <Group /> :
+                                                    <Question />
 
                                         }
-                                    </div>
+                                    </BaseIcon>
                                     <div className="author">
                                         <div className="author__username">
                                             {data.author.userName} · 23d
+                                        </div>
                                     </div>
-                                    </div>
-                                </div>
+                                </Box>
                                 <BaseIcon actionable>
                                     <More />
                                 </BaseIcon>
-                            </div>
-                            <div className="widget__title d-flex align-center">
-
+                            </Box>
+                            <div className="widget__title">
                                 <p>
                                     {data.title}
                                 </p>
@@ -56,7 +56,7 @@ function PostWidget({ data }) {
                             <ActionButton icon={<Bookmark />} />
                         </div>
                     </div>
-                </div>
+                </Box>
             </div>
         </article>
     )

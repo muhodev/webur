@@ -27,16 +27,11 @@
     &__item {
         margin-right: $spacer-4;
     }
-
 }
 .logo {
-    font-size: 22px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 700;
     margin: 0;
-    letter-spacing: 3px;
-    svg {
-        height: auto;
-        width: 100px;
-        color:#2f363d;
-    }
+    letter-spacing: 2.7px;
+    color: #2f363d;
 }

@@ -9,6 +9,8 @@ export { default as CommunityAboutWidget } from "./Widget/AboutCommunity"
 export { default as NewPostWidget } from "./Widget/NewPost"
 export { default as Select } from "./Select"
 export { default as Flex } from "./Flex"
+export { default as Box } from "./Box"
+
 
 
 
