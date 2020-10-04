@@ -2,11 +2,11 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0px;
+    padding: $spacer-2 0;
 
     .widget {
         border-radius: 0;
-        border: 0;
-        border-bottom: $border;
+        border-bottom: 0;
 
         &:first-child {
             border-top-right-radius: $radius;
@@ -16,6 +16,7 @@
         &:last-child {
             border-bottom-right-radius: $radius;
             border-bottom-left-radius: $radius;
+            border-bottom: 1px solid $c-border-light;
         }
     }
 }
@@ -25,6 +26,7 @@
     background-color: $bg-color-white;
     cursor: pointer;
     border-radius: $radius;
+    border: 1px solid $c-border-light;
 
     &__container {
         padding: $spacer-3 $spacer-3;
@@ -67,9 +69,7 @@
         padding: 0 10px;
         cursor: pointer;
         font-weight: $f-weight-medium;
-        // background-color: $c-gray-light;
-        // color: $c-text-white;
-        background-color: #e4e8f0;
+        background-color: #eeeff1;
         margin-right: $spacer-2;
         margin-top: $spacer-2;
     }
@@ -100,7 +100,7 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        color: #6a737d;
+        color: $c-text-gray-light;
 
         &:hover {
             color: #2188ff;

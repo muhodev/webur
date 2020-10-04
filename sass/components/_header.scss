@@ -6,10 +6,6 @@
     justify-content: center;
     background-color: $bg-color-white;
     border-bottom: $border;
-    // position: sticky;
-    // top: 0;
-    // left: 0;
-    // z-index: 999;
 
     &__container {
         max-width: 1200px;
@@ -29,9 +25,12 @@
     }
 }
 .logo {
-    font-size: 28px;
-    font-weight: 700;
     margin: 0;
-    letter-spacing: 2.7px;
-    color: #2f363d;
+    border-bottom: 1px solid $c-border-light;
+
+    &--text {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: 6px;
+    }
 }

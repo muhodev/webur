@@ -7,7 +7,7 @@
     transition: all 200ms;
 
     &--primary {
-        color: $c-text-primary
+        color: $c-text-primary;
     }
 
     &:hover {
@@ -17,17 +17,14 @@
     &--actionable {
         width: 32px;
         height: 32px;
-
     }
 }
 
 svg {
-    color: #6a737d;
+    color: #53575f;
     width: 17px;
     height: 17px;
     path:nth-child(2) {
         fill: currentColor;
     }
-
-
 }

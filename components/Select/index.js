@@ -9,7 +9,7 @@ function Select(props) {
                     <div className="d-flex align-center">
                         <Search />
                     </div>
-                    <div className="ml-2">Tuval'de arayın</div>
+                    <div className="ml-2">webur'da arayın</div>
                 </div>
                 {/* <div className="ml-2 d-flex align-center text-secondary">
                     <ExpandDown />

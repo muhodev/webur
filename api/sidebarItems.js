@@ -1,10 +1,10 @@
 import React from 'react'
-import { Home, TrendingUp, Notifications, Mail, Bookmark, Other } from "../components/Icons"
+import { TrendingUp, Notifications, Mail, Bookmark, Other, HomeFill } from "../components/Icons"
 
 export default [
     {
         title: "Ana Sayfa",
-        icon: <Home />,
+        icon: <HomeFill />,
         slug: ""
     },
     {
@@ -31,7 +31,7 @@ export default [
         title: "Daha fazla",
         icon: <Other />,
         slug: ""
-    }
+    },
 
 
 ]
