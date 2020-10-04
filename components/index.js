@@ -10,6 +10,8 @@ export { default as NewPostWidget } from "./Widget/NewPost"
 export { default as Select } from "./Select"
 export { default as Flex } from "./Flex"
 export { default as Box } from "./Box"
+export { default as AuthorTextUsername } from "./Author"
+
 
 
 

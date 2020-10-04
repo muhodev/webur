@@ -1,5 +1,6 @@
 export default [
     {
+        slug: "1",
         title: "C++ ile nesne yönelimli programlama temelleri",
         description: "Cpp ile oop kavramına giriş",
         author: {
@@ -13,6 +14,7 @@ export default [
         commentsCount: 0
     },
     {
+        slug: "2",
         title: "Redesign Tricks",
         description: "Tasarımlarınızda bu 4 hatayı yapmayın.",
         author: {
@@ -27,6 +29,7 @@ export default [
 
     },
     {
+        slug: "3",
         title: "Akademi 4.0 Etkinlik Serisi",
         description: "Şahıs ya da kurumsal olarak ücretsiz online etkinlikler düzenlemek ve bilgi almak için info@akademi40.org adresine mail atabilirsiniz. ",
         author: {

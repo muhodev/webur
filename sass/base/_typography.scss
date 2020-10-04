@@ -1,13 +1,16 @@
-.text-secondary {
-    color: $c-text-gray-light;
-}
-
 .f-weight--medium {
     font-weight: $f-weight-medium;
 }
 
 .text-color-primary {
     color: $c-text-primary;
+}
+.text-color-secondary {
+    color: $c-text-secondary;
+}
+
+.text-color-blue {
+    color: $c-text-blue;
 }
 
 .f-size--sm {
