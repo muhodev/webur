@@ -1,27 +1,23 @@
 .sidebar {
     position: sticky;
-    top: 16px;
+    top: 0;
+    padding: $spacer-2 0;
+    background-color: #fff;
+    min-height: 100vh;
+    border-right: 1px solid $c-border-light;
 
-    &__title {
-        font-weight: $f-weight-medium;
-        margin-bottom: $spacer-3;
-        font-size: 12px;
-        color: $c-text-gray-light;
-    }
     &__item {
         margin-bottom: $spacer-4;
-        padding: $spacer-1 $spacer-2;
-        font-weight: $f-weight-medium;
+        padding: $spacer-2 $spacer-5;
         cursor: pointer;
-        border-radius: $radius;
+        font-weight: 500;
 
         &--active {
-            background-color: $c-primary;
-            color: $c-text-white;
+            border-radius: 2px;
+            border-right: 3px solid #0079d3;
             svg {
-                color: $c-text-white
+                color: #0079d3;
             }
         }
-
     }
 }

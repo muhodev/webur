@@ -6,22 +6,18 @@ import { posts } from "../api/"
 function HomePage(props) {
     return (
         <Layout>
-            <div>
-                <div>
+            <div className="mt-2 mb-2">
+                <PostTopWidget />
+                <div className="posts">
 
-                    <PostTopWidget />
-                    <div className="posts mt-2">
-
-                        {
-                            posts.map((post, index) => (
-                                <PostWidget data={post} key={index} />
-                            ))
-                        }
-                    </div>
+                    {
+                        posts.map((post, index) => (
+                            <PostWidget data={post} key={index} />
+                        ))
+                    }
                 </div>
-
             </div>
-            <div className="posts-sidebar__right">
+            <div className="posts-sidebar__right mt-2 mb-2 mr-4">
                 <NewPostWidget />
                 <div className="mt-2 mb-2">
                     <CommunityAboutWidget />
@@ -52,32 +48,17 @@ function HomePage(props) {
                         <div className="f-weight--medium mb-1">
                             Profiller
                         </div>
-                        <div className="text-secondary f-size--sm mb-3">
+                        <div className="text-secondary f-size--sm mb-4">
                             Kreatif içerik üreten profilleri keşfedin.
                         </div>
-                        <div className="d-flex align-start mb-3">
-                            <Avatar size="md" img="https://pbs.twimg.com/profile_images/1297468955540553728/ZiFCxzln_400x400.jpg" />
-                            <div className="author__content">
-                                <div className="author">
-                                    <div className="author__name">
-                                        muho
-                                </div>
-                                    <div className="author__username">
-                                        @muhodev
-                                </div>
-                                </div>
-                                <div className="word-break mt-1 f-size--sm">Co-founder <span className="text-color-primary">@weburus</span> Fullstack Developer. Creator at weburus</div>
-                            </div>
-
-                        </div>
-                        <div className="d-flex align-start mb-3">
+                        <div className="d-flex align-start mb-4">
                             <Avatar size="md" img="https://pbs.twimg.com/profile_images/1193093959435915264/yFPx32G7_400x400.jpg" />
                             <div className="author__content">
                                 <div className="author">
                                     <div className="author__name">
                                         fka
                                 </div>
-                                    <div className="author__username">
+                                    <div className="author__username ml-1">
                                         @f
                                 </div>
                                 </div>
@@ -94,7 +75,7 @@ function HomePage(props) {
                                     <div className="author__name">
                                         M.Atıf Ceylan
                                 </div>
-                                    <div className="author__username">
+                                    <div className="author__username ml-1">
                                         @atifceylan
                                 </div>
                                 </div>

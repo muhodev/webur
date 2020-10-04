@@ -1,6 +1,6 @@
 import React from 'react'
 import { Avatar, Box } from '..'
-import { Comment, Favorite, Bookmark, Share, More, Article, Question, Group, BaseIcon } from '../Icons'
+import { Comment, Favorite, Bookmark, More, Article, Question, Group, BaseIcon, Share } from '../Icons'
 
 function PostWidget({ data }) {
     return (
@@ -23,7 +23,7 @@ function PostWidget({ data }) {
 
                                         }
                                     </BaseIcon>
-                                    <div className="author">
+                                    <div className="author ml-1">
                                         <div className="author__username">
                                             {data.author.userName} · 23d
                                         </div>
@@ -52,7 +52,7 @@ function PostWidget({ data }) {
                         <div className="widget__actions text-secondary">
                             <ActionButton icon={<Favorite />} count={data.likesCount} />
                             <ActionButton icon={<Comment />} count={data.commentsCount} />
-                            <ActionButton icon={<Share />} />
+                            <ActionButton icon={<Share />} count={data.commentsCount} />
                             <ActionButton icon={<Bookmark />} />
                         </div>
                     </div>

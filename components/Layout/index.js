@@ -7,7 +7,7 @@ function Layout(props) {
         <Fragment>
             <Head>
                 <title>
-                    {props.pageTitle || "Tuval.dev"}
+                    {props.pageTitle || "webur"}
                 </title>
             </Head>
             {/* <Header /> */}
