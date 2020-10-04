@@ -45,8 +45,13 @@ function HomePage(props) {
                 </div>
                 <div className="widget">
                     <div className="widget__container">
-                        <div className="f-weight--medium mb-1">
-                            Profiller
+                        <div className="d-flex align-center mb-1">
+                            <div className="f-weight--medium">
+                                Profiller
+                            </div>
+                            <div className="f-size--small">
+                                Tümü
+                            </div>
                         </div>
                         <div className="text-secondary f-size--sm mb-4">
                             Kreatif içerik üreten profilleri keşfedin.

@@ -32,6 +32,12 @@
         padding: $spacer-3 $spacer-3;
     }
 
+    &__link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
     &__content {
         padding-left: $spacer-3;
         width: 98%;
@@ -100,16 +106,16 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        color: $c-text-gray-light;
+        color: $c-text-primary;
 
         &:hover {
-            color: #2188ff;
+            color: $c-text-blue;
 
             svg {
                 color: inherit !important;
             }
             .icon {
-                background-color: #dbedff;
+                background-color: $c-blue-ultra-light;
             }
         }
 
@@ -153,7 +159,7 @@
 
             &__item {
                 &--active {
-                    color: $c-text-primary;
+                    color: $c-text-blue;
                 }
             }
         }
@@ -169,7 +175,7 @@
     }
 
     &__username {
-        color: $c-text-gray-light;
+        color: currentColor;
     }
 }
 

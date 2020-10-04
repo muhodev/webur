@@ -11,7 +11,10 @@
     }
 
     &:hover {
-        background-color: #ebeff7;
+        background-color: #f0f4f8;
+        svg {
+            color: $c-text-primary;
+        }
     }
 
     &--actionable {
